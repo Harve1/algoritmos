@@ -1,0 +1,28 @@
+class program {
+ void norte() { while (notFacingNorth) { turnleft(); }}
+ void sur () { while (notFacingSouth) { turnleft (); }}
+ void este () { while (notFacingEast) { turnleft (); }}
+ void oeste () { while (notFacingWest) { turnleft (); }}
+ void derecha () { iterate (3) { turnleft ();}}
+
+ void recoger() { while (nextToABeeper) { pickbeeper ();}}
+ void dejar () { if (anyBeepersInBeeperBag) { putbeeper ();}}
+ void mediavuelta() { turnleft ();  { turnleft(); }}
+
+ void inicia() { if (anyBeepersInBeeperBag) { dejar(); move (); derecha (); move ();
+ if(facingEast) {dejar (); sur(); move();
+ while (frontIsBlocked&&facingSouth) { dejar(); mediavuelta();
+ while (frontIsClear&&nextToABeeper)  { move();
+ if (notNextToABeeper) { derecha (); move (); sur ();
+ while( frontIsClear) { dejar (); move();
+}}}}}}}
+
+
+
+program() {
+    inicia();
+
+    turnoff();
+ }
+}
+

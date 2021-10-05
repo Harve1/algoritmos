@@ -1,0 +1,45 @@
+class program {
+void  vuelve_inicio(){
+ turnleft();
+ turnleft();
+     while(frontIsClear){
+        move();
+    }
+    while(anyBeepersInBeeperBag){
+        putbeeper();
+    }
+}
+
+void levanta_beeper(){
+    while(nextToABeeper){
+    pickbeeper();
+
+ }
+}
+
+void suma_beeper(){
+    while(frontIsClear){
+     levanta_beeper();
+     move();
+    if(frontIsBlocked){
+    levanta_beeper();
+    vuelve_inicio();
+    turnleft();
+    levanta_beeper();
+        if (frontIsBlocked && facingEast){
+    vuelve_inicio();
+    turnoff();
+    }
+    move();
+   turnleft();
+
+    }
+ }
+}
+
+    program() {
+        suma_beeper();
+        turnoff();
+    }
+}
+

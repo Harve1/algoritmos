@@ -1,0 +1,108 @@
+         class program {
+              program(){
+              move();
+              pickbeeper();
+              move();
+              pickbeeper();
+               move();
+              pickbeeper();
+              move();
+              pickbeeper();
+                move();
+              pickbeeper();
+               turnleft();
+               turnleft();
+               move();
+                move();
+                 move();
+
+                  move();
+                   move();
+                   putbeeper();
+                    putbeeper();
+                     putbeeper();
+                      putbeeper();
+                       putbeeper();
+
+
+                   turnleft();
+                   move();
+                   turnleft ();
+
+                   pickbeeper();
+                    move();
+                   pickbeeper();
+                    move();
+                   turnleft();
+                   turnleft();
+                    move();
+                move();
+
+                   putbeeper();
+                    putbeeper();
+
+
+                      turnleft();
+
+                 move();
+                  turnleft();
+                  pickbeeper();
+                   move();
+                   pickbeeper();
+                    move();
+                    pickbeeper();
+                     move();
+                   pickbeeper();
+                    move();
+                       turnleft();
+                   turnleft();
+                   move();
+                   move();
+                   move();
+                   move();
+                    putbeeper();
+                    putbeeper();
+                    putbeeper();
+                    putbeeper();
+
+
+
+                   turnleft();
+                     move();
+                     turnleft();
+                   pickbeeper();
+                    move();
+                     pickbeeper();
+                    move();
+                      turnleft();
+                   turnleft();
+                    move();
+                   move();
+                  putbeeper();
+                    putbeeper();
+
+
+                   turnleft();
+                   move();
+                     turnleft();
+                   pickbeeper();
+                    move();
+                     pickbeeper();
+                    move();
+                      pickbeeper();
+                    move();
+                      turnleft();
+                   turnleft();
+                    move();
+                   move();
+                   move ();
+                  putbeeper();
+                    putbeeper();
+                    putbeeper();
+
+
+
+              turnoff();
+
+            }
+        }

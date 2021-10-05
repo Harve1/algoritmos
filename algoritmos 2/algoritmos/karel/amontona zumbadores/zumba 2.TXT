@@ -1,0 +1,44 @@
+class program {
+ void amontona(){
+while(nextToABeeper && frontIsClear){
+recoge();
+move();
+
+
+
+if(frontIsBlocked && notNextToABeeper){
+recoge();
+regresa();
+turnleft();
+move();
+if(frontIsBlocked && facingEast){
+turnleft();
+}
+}
+}
+void regresa(){
+turnleft();
+turnleft();
+while(frontIsClear){
+move();
+}
+while(anyBeepersInBeeperBag){
+putbeeper();
+}
+}
+void recoge() {
+while(nextToABeeper){
+pickbeeper();
+}
+}
+
+
+
+
+program (){
+amontona();
+turnoff();
+}
+}
+
+

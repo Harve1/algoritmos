@@ -1,0 +1,38 @@
+class program{
+
+void turnleft();
+while(anyBeepersInBeeperBag){
+putbeeper();
+}
+}void toma() {
+while(nextToABeeper){
+pickbeeper();
+}
+}
+void amontona(){
+while(nextToABeeper && frontIsClear){
+toma();
+move();
+
+
+
+if(frontIsBlocked || notNextToABeeper){
+toma();
+volver();
+turnleft();
+if(frontIsBlocked && facingEast){
+turnoff();
+}
+move();
+turnleft();
+
+
+
+}
+}
+}
+
+
+
+program (){
+amontona();

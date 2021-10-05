@@ -1,0 +1,99 @@
+class program 
+{
+void aOrientacion()
+{
+  while(notFacingEast)
+  {
+    turnleft();
+  }
+}
+void pickCarrot()
+{
+  while (nextToABeeper)
+  {
+    pickbeeper();
+  }
+}
+
+
+void turnRight()
+{
+  iterate(3)
+  {
+    turnleft();
+  }
+
+}
+
+void goToField()
+{
+  turnleft();
+  turnleft();
+  move();
+  turnRight();
+  move();
+  while(rightIsBlocked)
+  {
+   move();
+  }
+  turnRight();
+  move();
+  turnRight();
+  while(frontIsClear)
+  {
+    move();
+  }
+  turnleft();
+  turnleft();
+ 
+}
+void sembrar()
+{
+  while(anyBeepersInBeeperBag)
+  {
+    if(frontIsClear)
+    {
+    putbeeper();
+    move();
+ } 
+  if(frontIsBlocked && leftIsBlocked && facingSouth)
+{
+  putbeeper();
+  turnoff();
+}
+  if(frontIsBlocked && rightIsBlocked && facingNorth)
+{
+  putbeeper();
+   turnoff();  
+}
+  if(frontIsBlocked && facingNorth && rightIsClear)
+  {
+  putbeeper();
+  turnRight();
+  move();
+  turnRight();
+}
+if(frontIsBlocked && facingSouth)
+{
+ putbeeper(); 
+ turnleft();
+ move();
+ turnleft();
+}
+
+  if(frontIsBlocked && rightIsBlocked && facingNorth)
+  {
+  putbeeper(); 
+  turnoff();
+ }
+}
+}
+	program (){
+	aOrientacion();
+ 	move();
+ 	pickCarrot();
+ 	goToField();
+ 	sembrar();
+
+  	}	
+}

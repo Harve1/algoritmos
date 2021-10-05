@@ -1,0 +1,52 @@
+<script>
+    //ejercicio 1
+    var decimales = 0.1;
+    var h = 0;
+    for (var h = 0; h <= 9; h + 0.1) {
+        h = parseFloat(h) + parseFloat(decimales);
+        console.log(+h);
+    }
+
+
+    //ejercicio 2
+    for (var numeros = 100; numeros <= 199; numeros++) {
+        console.log(numeros);
+    }
+
+    //ejercicio 3
+    var saltado = 3;
+    var w = 2;
+    for (var w = 2; w <= 20; w + 3) {
+        w = parseInt(w) + parseInt(saltado)
+        console.log(+w);
+    }
+    //ejercicio 4
+
+    var n = 1;
+    var suma = 0;
+    var num;
+
+    while (n <= 3) {
+        num = prompt("ingrese un numero´,´´");
+        num = parseInt(num);
+        suma = suma + num;
+        n = n + 1;
+
+    }
+    document.write("la suma de todos los numeros es: " + suma);
+
+    //ejercicio 5
+
+    var n1 = prompt("dime un numero");
+
+    document.write("el resultado es") + n1;
+    document.write(n1 * 2 - 1);
+
+
+    //ejercicio 6
+    var suma = 0;
+    for (var b = 0; b <= 100; b++) {
+        suma = parseInt(suma) + parseInt(b);
+        console.log(+suma);
+    }
+</script>

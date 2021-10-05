@@ -1,0 +1,65 @@
+    class program {
+void build(){
+ while(!facingEast){
+    turnleft();
+    }
+    while(!nextToABeeper && anyBeepersInBeeperBag){
+    putbeeper();
+    if(frontIsClear){
+    move();
+    }
+    if(frontIsBlocked){
+    if(!nextToABeeper){
+    putbeeper();
+    }
+    while(!facingNorth){
+    turnleft();
+    }
+    move();
+    while(!facingWest){
+    turnleft();
+    }
+    while(frontIsClear){
+    move();
+    }
+    build();
+    }
+    }
+}
+
+void pick(){
+ while(!facingNorth){
+    turnleft();
+    }
+ while(nextToABeeper){
+ pickbeeper();
+ if(frontIsClear){
+ move();
+ }
+ }
+ while(!facingSouth){
+    turnleft();
+    }
+    while(frontIsClear){
+    move();
+    }
+    while(!facingEast){
+    turnleft();
+    }
+    if(frontIsClear){
+    move();
+    pick();
+    }
+    while(!facingWest){
+    turnleft();
+    }
+    while(frontIsClear){
+    move();
+    }
+    build();
+}
+    program () {
+        pick();
+        turnoff();
+    }
+}

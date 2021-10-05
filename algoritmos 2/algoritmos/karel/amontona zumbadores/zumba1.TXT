@@ -1,0 +1,50 @@
+class program {
+ void regresar(){
+  turnleft();
+  turnleft();
+   while(frontIsclear){
+  move();
+  }
+  while(anyBeepersinBipeerbag){
+  putbeeper();
+           }
+
+  }
+
+
+      void recoger(){
+      while(nexttoabeeper){
+      pickbeeper();
+
+
+     }
+
+  }
+
+
+      void juntar (){
+      while (nexttoabeeper && frontiscleaner ){
+       pickbeeper();
+       recoger();
+       move();
+       if(frontisblocked && nottextoabeeper){
+       recoger();
+       regresar();
+       turnleft();
+        move();
+     }  turnleft();
+
+     }
+
+  }
+
+
+
+
+     program (){
+       juntar();
+        turnoff();
+
+
+
+
